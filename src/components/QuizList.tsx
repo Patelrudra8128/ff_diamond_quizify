@@ -51,7 +51,7 @@ export default function QuizList({
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-hidden p-10">
         {quizzes.map((quiz, index) => (
           <div
             key={index}
