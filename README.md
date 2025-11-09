@@ -1,4 +1,4 @@
-# Quiz Master - Interactive Quiz Application
+# FF Diamond Quizify - Interactive Quiz Application
 
 A modern, interactive quiz application built with React, TypeScript, Vite, and Tailwind CSS. Test your knowledge with beautifully designed quizzes featuring a glassmorphic UI, smooth animations, and an intuitive user experience.
 
