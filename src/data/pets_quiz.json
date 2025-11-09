@@ -1,6 +1,6 @@
 [
   {
-    "imagePath": "placeholder",
+    "imagePath": "Kactus.webp",
     "name": "Kactus",
     "description": "Kactus is a Free Fire pet with a special ability.",
     "questions": [
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Fang.webp",
     "name": "Fang",
     "description": "Fang is a Free Fire pet with a special ability.",
     "questions": [
@@ -94,7 +94,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Hoot.webp",
     "name": "Hoot",
     "description": "Hoot is a Free Fire pet with a special ability.",
     "questions": [
@@ -141,7 +141,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Finn.webp",
     "name": "Finn",
     "description": "Finn is a Free Fire pet with a special ability.",
     "questions": [
@@ -188,7 +188,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Zasil.webp",
     "name": "Zasil",
     "description": "Zasil is a Free Fire pet with a special ability.",
     "questions": [
@@ -235,7 +235,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Arvon.webp",
     "name": "Arvon",
     "description": "Arvon is a Free Fire pet with a special ability.",
     "questions": [
@@ -282,7 +282,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Flash.webp",
     "name": "Flash",
     "description": "Flash is a Free Fire pet with a special ability.",
     "questions": [
@@ -329,7 +329,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Yeti.webp",
     "name": "Yeti",
     "description": "Yeti is a Free Fire pet with a special ability.",
     "questions": [
@@ -376,7 +376,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Agent Hop.webp",
     "name": "Agent Hop",
     "description": "Agent Hop is a Free Fire pet with a special ability.",
     "questions": [
@@ -423,7 +423,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Sensei Tig.webp",
     "name": "Sensei Tig",
     "description": "Sensei Tig is a Free Fire pet with a special ability.",
     "questions": [
@@ -470,7 +470,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Dr. Beanie.webp",
     "name": "Dr. Beanie",
     "description": "Dr. Beanie is a Free Fire pet with a special ability.",
     "questions": [
@@ -517,7 +517,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Moony.webp",
     "name": "Moony",
     "description": "Moony is a Free Fire pet with a special ability.",
     "questions": [
@@ -564,7 +564,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Dreki.webp",
     "name": "Dreki",
     "description": "Dreki is a Free Fire pet with a special ability.",
     "questions": [
@@ -611,7 +611,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Beaston.webp",
     "name": "Beaston",
     "description": "Beaston is a Free Fire pet with a special ability.",
     "questions": [
@@ -658,7 +658,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Rockie.webp",
     "name": "Rockie",
     "description": "Rockie is a Free Fire pet with a special ability.",
     "questions": [
@@ -705,7 +705,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Mr.Waggor.webp",
     "name": "Mr.Waggor",
     "description": "Mr.Waggor is a Free Fire pet with a special ability.",
     "questions": [
@@ -752,7 +752,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Falco.webp",
     "name": "Falco",
     "description": "Falco is a Free Fire pet with a special ability.",
     "questions": [
@@ -799,7 +799,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Ottero.webp",
     "name": "Ottero",
     "description": "Ottero is a Free Fire pet with a special ability.",
     "questions": [
@@ -846,7 +846,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Robo.webp",
     "name": "Robo",
     "description": "Robo is a Free Fire pet with a special ability.",
     "questions": [
@@ -893,7 +893,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Spirit Fox.webp",
     "name": "Spirit Fox",
     "description": "Spirit Fox is a Free Fire pet with a special ability.",
     "questions": [
@@ -940,7 +940,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Shiba.webp",
     "name": "Shiba",
     "description": "Shiba is a Free Fire pet with a special ability.",
     "questions": [
@@ -987,7 +987,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Defective Panda.webp",
     "name": "Defective Panda",
     "description": "Defective Panda is a Free Fire pet with a special ability.",
     "questions": [
@@ -1034,7 +1034,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Night Panther.webp",
     "name": "Night Panther",
     "description": "Night Panther is a Free Fire pet with a special ability.",
     "questions": [
@@ -1081,7 +1081,7 @@
     ]
   },
   {
-    "imagePath": "placeholder",
+    "imagePath": "Pug.webp",
     "name": "Pug",
     "description": "Pug is a Free Fire pet with a special ability.",
     "questions": [

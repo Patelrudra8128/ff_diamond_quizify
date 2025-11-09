@@ -57,7 +57,7 @@ export default function QuizList({
             key={`${category}-${quiz.name}-${index}`}
             className="will-change-transform"
           >
-            <QuizCard quiz={quiz} quizIndex={index} onStart={onStartQuiz} />
+            <QuizCard quiz={quiz} quizIndex={index} onStart={onStartQuiz} category={category} />
           </div>
         ))}
       </div>
