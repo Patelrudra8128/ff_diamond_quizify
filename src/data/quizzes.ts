@@ -1,51 +1,21 @@
 import { type Quiz } from '../types';
+import charactersData from './characters_quiz.json';
+import petsData from './pets_quiz.json';
+import weaponsData from './weapons_quiz.json';
 
+// Type assert the imported JSON data
+const charactersQuizzes = charactersData as Quiz[];
+const petsQuizzes = petsData as Quiz[];
+const weaponsQuizzes = weaponsData as Quiz[];
+
+// Combine all quizzes: Characters (each character is a separate quiz), Pets, and Weapons
 export const quizzes: Quiz[] = [
-  {
-    imagePath: 'placeholder',
-    name: 'Nero',
-    description: 'Tactical fighter with explosive instincts',
-    questions: [
-      {
-        question: "What is Nero's main skill type in Free Fire?",
-        answer: 'B',
-        A: 'Healing Boost',
-        B: 'Explosive Tactics',
-        C: 'Time Control',
-        D: 'Stealth Cloak',
-      },
-      {
-        question: "Which ability boosts Nero's damage output?",
-        answer: 'A',
-        A: 'Blast Core',
-        B: 'Rapid Heal',
-        C: 'Focus Aim',
-        D: 'Silent Shot',
-      },
-      {
-        question: 'Nero excels most in which play style?',
-        answer: 'C',
-        A: 'Sniping',
-        B: 'Support',
-        C: 'Rushing',
-        D: 'Camouflage',
-      },
-      {
-        question: "What does Nero's passive skill enhance?",
-        answer: 'D',
-        A: 'Jump height',
-        B: 'Speed',
-        C: 'Accuracy',
-        D: 'Grenade damage',
-      },
-      {
-        question: "Nero's background story connects to?",
-        answer: 'A',
-        A: 'Military squad',
-        B: 'DJ crew',
-        C: 'Street racer',
-        D: 'Detective agency',
-      },
-    ],
-  },
+  ...charactersQuizzes,
+  ...petsQuizzes,
+  ...weaponsQuizzes,
 ];
+
+// Export quizzes by category for potential future use
+export const charactersQuizzesList: Quiz[] = charactersQuizzes;
+export const petsQuizzesList: Quiz[] = petsQuizzes;
+export const weaponsQuizzesList: Quiz[] = weaponsQuizzes;
