@@ -2,1128 +2,1128 @@
   {
     "imagePath": "placeholder",
     "name": "Kactus",
-    "description": "Kactus is a Free Fire pet with special abilities.",
+    "description": "Kactus is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Kactus's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Kactus's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Kactus's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Kactus's unique skill in Free Fire?",
+        "question": "Kactus is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Kactus's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Kactus have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Kactus's unique skill in Free Fire?",
+        "question": "Which color best represents Kactus?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Fang",
-    "description": "Fang is a Free Fire pet with special abilities.",
+    "description": "Fang is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Fang's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Fang's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Fang's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Fang's unique skill in Free Fire?",
+        "question": "Fang is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Fang's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Fang have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Fang's unique skill in Free Fire?",
+        "question": "Which color best represents Fang?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Hoot",
-    "description": "Hoot is a Free Fire pet with special abilities.",
+    "description": "Hoot is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Hoot's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Hoot's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Hoot's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Hoot's unique skill in Free Fire?",
+        "question": "Hoot is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Hoot's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Hoot have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Hoot's unique skill in Free Fire?",
+        "question": "Which color best represents Hoot?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Finn",
-    "description": "Finn is a Free Fire pet with special abilities.",
+    "description": "Finn is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Finn's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Finn's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Finn's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Finn's unique skill in Free Fire?",
+        "question": "Finn is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Finn's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Finn have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Finn's unique skill in Free Fire?",
+        "question": "Which color best represents Finn?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Zasil",
-    "description": "Zasil is a Free Fire pet with special abilities.",
+    "description": "Zasil is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Zasil's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Zasil's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Zasil's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Zasil's unique skill in Free Fire?",
+        "question": "Zasil is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Zasil's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Zasil have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Zasil's unique skill in Free Fire?",
+        "question": "Which color best represents Zasil?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Arvon",
-    "description": "Arvon is a Free Fire pet with special abilities.",
+    "description": "Arvon is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Arvon's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Arvon's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Arvon's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Arvon's unique skill in Free Fire?",
+        "question": "Arvon is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Arvon's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Arvon have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Arvon's unique skill in Free Fire?",
+        "question": "Which color best represents Arvon?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Flash",
-    "description": "Flash is a Free Fire pet with special abilities.",
+    "description": "Flash is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Flash's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Flash's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Flash's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Flash's unique skill in Free Fire?",
+        "question": "Flash is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Flash's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Flash have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Flash's unique skill in Free Fire?",
+        "question": "Which color best represents Flash?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Yeti",
-    "description": "Yeti is a Free Fire pet with special abilities.",
+    "description": "Yeti is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Yeti's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Yeti's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Yeti's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Yeti's unique skill in Free Fire?",
+        "question": "Yeti is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Yeti's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Yeti have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Yeti's unique skill in Free Fire?",
+        "question": "Which color best represents Yeti?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Agent Hop",
-    "description": "Agent Hop is a Free Fire pet with special abilities.",
+    "description": "Agent Hop is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Agent Hop's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Agent Hop's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Agent Hop's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Agent Hop's unique skill in Free Fire?",
+        "question": "Agent Hop is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Agent Hop's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Agent Hop have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Agent Hop's unique skill in Free Fire?",
+        "question": "Which color best represents Agent Hop?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Sensei Tig",
-    "description": "Sensei Tig is a Free Fire pet with special abilities.",
+    "description": "Sensei Tig is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Sensei Tig's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Sensei Tig's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Sensei Tig's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Sensei Tig's unique skill in Free Fire?",
+        "question": "Sensei Tig is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Sensei Tig's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Sensei Tig have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Sensei Tig's unique skill in Free Fire?",
+        "question": "Which color best represents Sensei Tig?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Dr. Beanie",
-    "description": "Dr. Beanie is a Free Fire pet with special abilities.",
+    "description": "Dr. Beanie is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Dr. Beanie's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Dr. Beanie's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Dr. Beanie's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Dr. Beanie's unique skill in Free Fire?",
+        "question": "Dr. Beanie is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Dr. Beanie's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Dr. Beanie have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Dr. Beanie's unique skill in Free Fire?",
+        "question": "Which color best represents Dr. Beanie?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Moony",
-    "description": "Moony is a Free Fire pet with special abilities.",
+    "description": "Moony is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Moony's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Moony's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Moony's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Moony's unique skill in Free Fire?",
+        "question": "Moony is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Moony's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Moony have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Moony's unique skill in Free Fire?",
+        "question": "Which color best represents Moony?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Dreki",
-    "description": "Dreki is a Free Fire pet with special abilities.",
+    "description": "Dreki is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Dreki's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Dreki's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Dreki's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Dreki's unique skill in Free Fire?",
+        "question": "Dreki is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Dreki's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Dreki have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Dreki's unique skill in Free Fire?",
+        "question": "Which color best represents Dreki?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Beaston",
-    "description": "Beaston is a Free Fire pet with special abilities.",
+    "description": "Beaston is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Beaston's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Beaston's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Beaston's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Beaston's unique skill in Free Fire?",
+        "question": "Beaston is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Beaston's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Beaston have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Beaston's unique skill in Free Fire?",
+        "question": "Which color best represents Beaston?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Rockie",
-    "description": "Rockie is a Free Fire pet with special abilities.",
+    "description": "Rockie is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Rockie's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Rockie's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Rockie's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Rockie's unique skill in Free Fire?",
+        "question": "Rockie is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Rockie's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Rockie have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Rockie's unique skill in Free Fire?",
+        "question": "Which color best represents Rockie?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Mr.Waggor",
-    "description": "Mr.Waggor is a Free Fire pet with special abilities.",
+    "description": "Mr.Waggor is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Mr.Waggor's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Mr.Waggor's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Mr.Waggor's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Mr.Waggor's unique skill in Free Fire?",
+        "question": "Mr.Waggor is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Mr.Waggor's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Mr.Waggor have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Mr.Waggor's unique skill in Free Fire?",
+        "question": "Which color best represents Mr.Waggor?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Falco",
-    "description": "Falco is a Free Fire pet with special abilities.",
+    "description": "Falco is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Falco's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Falco's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Falco's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Falco's unique skill in Free Fire?",
+        "question": "Falco is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Falco's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Falco have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Falco's unique skill in Free Fire?",
+        "question": "Which color best represents Falco?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Ottero",
-    "description": "Ottero is a Free Fire pet with special abilities.",
+    "description": "Ottero is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Ottero's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Ottero's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Ottero's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Ottero's unique skill in Free Fire?",
+        "question": "Ottero is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Ottero's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Ottero have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Ottero's unique skill in Free Fire?",
+        "question": "Which color best represents Ottero?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Robo",
-    "description": "Robo is a Free Fire pet with special abilities.",
+    "description": "Robo is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Robo's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Robo's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Robo's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Robo's unique skill in Free Fire?",
+        "question": "Robo is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Robo's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Robo have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Robo's unique skill in Free Fire?",
+        "question": "Which color best represents Robo?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Spirit Fox",
-    "description": "Spirit Fox is a Free Fire pet with special abilities.",
+    "description": "Spirit Fox is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Spirit Fox's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Spirit Fox's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Spirit Fox's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Spirit Fox's unique skill in Free Fire?",
+        "question": "Spirit Fox is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Spirit Fox's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Spirit Fox have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Spirit Fox's unique skill in Free Fire?",
+        "question": "Which color best represents Spirit Fox?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Shiba",
-    "description": "Shiba is a Free Fire pet with special abilities.",
+    "description": "Shiba is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Shiba's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Shiba's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Shiba's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Shiba's unique skill in Free Fire?",
+        "question": "Shiba is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Shiba's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Shiba have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Shiba's unique skill in Free Fire?",
+        "question": "Which color best represents Shiba?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Defective Panda",
-    "description": "Defective Panda is a Free Fire pet with special abilities.",
+    "description": "Defective Panda is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Defective Panda's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Defective Panda's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Defective Panda's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Defective Panda's unique skill in Free Fire?",
+        "question": "Defective Panda is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Defective Panda's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Defective Panda have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Defective Panda's unique skill in Free Fire?",
+        "question": "Which color best represents Defective Panda?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Night Panther",
-    "description": "Night Panther is a Free Fire pet with special abilities.",
+    "description": "Night Panther is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Night Panther's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Night Panther's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Night Panther's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Night Panther's unique skill in Free Fire?",
+        "question": "Night Panther is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Night Panther's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Night Panther have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Night Panther's unique skill in Free Fire?",
+        "question": "Which color best represents Night Panther?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   },
   {
     "imagePath": "placeholder",
     "name": "Pug",
-    "description": "Pug is a Free Fire pet with special abilities.",
+    "description": "Pug is a Free Fire pet with a special ability.",
     "questions": [
       {
         "question": "What is Pug's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "answer": "B",
+        "A": "Healing Pulse",
+        "B": "Energy Boost",
+        "C": "Stealth Field",
+        "D": "Armor Shield"
       },
       {
-        "question": "What is Pug's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "How does Pug's skill help the player?",
+        "answer": "C",
+        "A": "Increases armor level",
+        "B": "Boosts running speed",
+        "C": "Restores EP over time",
+        "D": "Enhances weapon range"
       },
       {
-        "question": "What is Pug's unique skill in Free Fire?",
+        "question": "Pug is most effective in which situation?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "During close combat",
+        "B": "While looting items",
+        "C": "When sniping",
+        "D": "Inside safe zones"
       },
       {
-        "question": "What is Pug's unique skill in Free Fire?",
-        "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "question": "What kind of personality does Pug have?",
+        "answer": "D",
+        "A": "Calm and quiet",
+        "B": "Aggressive and bold",
+        "C": "Lazy and funny",
+        "D": "Loyal and energetic"
       },
       {
-        "question": "What is Pug's unique skill in Free Fire?",
+        "question": "Which color best represents Pug?",
         "answer": "A",
-        "A": "EP regeneration",
-        "B": "Damage boost",
-        "C": "Healing aura",
-        "D": "Speed increase"
+        "A": "Blue",
+        "B": "Red",
+        "C": "Green",
+        "D": "Yellow"
       }
     ]
   }

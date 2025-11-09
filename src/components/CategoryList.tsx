@@ -49,7 +49,7 @@ export default function CategoryList({
     <div className="max-w-6xl mx-auto animate-fadeIn w-full overflow-x-hidden px-4">
       <div className="text-center mb-16">
         <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-6 animate-slideDown">
-          Quiz Master
+          FF Diamond Quizify
         </h1>
         <p className="text-2xl text-gray-300 font-light">
           Choose a category to test your knowledge
