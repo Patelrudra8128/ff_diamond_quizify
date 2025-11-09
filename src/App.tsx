@@ -102,7 +102,7 @@ function App() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 py-8 px-4 max-w-full overflow-x-hidden">
+      <div className="relative z-10 py-8 px-4 max-w-full overflow-x-hidden min-h-screen">
         {currentView === 'categories' && (
           <CategoryList
             onSelectCategory={handleSelectCategory}

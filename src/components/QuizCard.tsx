@@ -8,9 +8,9 @@ interface QuizCardProps {
 
 export default function QuizCard({ quiz, quizIndex, onStart }: QuizCardProps) {
   return (
-    <div className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02]">
+    <div className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] will-change-transform">
       {/* Gradient overlay on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
       
       <div className="relative z-10">
         {quiz.imagePath && quiz.imagePath !== 'placeholder' ? (
@@ -18,6 +18,7 @@ export default function QuizCard({ quiz, quizIndex, onStart }: QuizCardProps) {
             src={quiz.imagePath} 
             alt={quiz.name}
             className="w-full h-48 object-cover rounded-xl mb-4 shadow-lg"
+            loading="lazy"
           />
         ) : (
           <div className="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-4 shadow-lg flex items-center justify-center">

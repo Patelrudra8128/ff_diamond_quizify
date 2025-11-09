@@ -20,7 +20,7 @@ export default function CategoryCard({
   return (
     <div
       onClick={onClick}
-      className="sgroup relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] cursor-pointer"
+      className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] cursor-pointer will-change-transform"
     >
       {/* Gradient overlay on hover */}
       <div

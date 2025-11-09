@@ -18,7 +18,7 @@ export default function QuizList({
   onBackToCategories,
 }: QuizListProps) {
   return (
-    <div className="max-w-6xl mx-auto animate-fadeIn w-full overflow-x-hidden px-4">
+    <div className="max-w-6xl mx-auto w-full px-4 min-h-screen">
       <div className="mb-8">
         <button
           onClick={onBackToCategories}
@@ -40,7 +40,7 @@ export default function QuizList({
           Back to Categories
         </button>
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-4 animate-slideDown">
+          <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-4">
             {categoryName} Quizzes
           </h2>
           <p className="text-xl text-gray-300 font-light">
@@ -51,12 +51,11 @@ export default function QuizList({
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-hidden p-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-8">
         {quizzes.map((quiz, index) => (
           <div
-            key={index}
-            className="animate-fadeInUp"
-            style={{ animationDelay: `${index * 50}ms` }}
+            key={`${category}-${quiz.name}-${index}`}
+            className="will-change-transform"
           >
             <QuizCard quiz={quiz} quizIndex={index} onStart={onStartQuiz} />
           </div>
