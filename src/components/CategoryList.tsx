@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import { db } from '../firebase.js';
-import { collection, getDocs } from 'firebase/firestore';
 import CategoryCard from './CategoryCard';
 
 export type Category = 'characters' | 'pets' | 'weapons';
@@ -18,16 +15,6 @@ export default function CategoryList({
   onSelectCategory,
   categoryCounts,
 }: CategoryListProps) {
-  useEffect(() => {
-    const fetchUsers = async () => {
-      const usersCollection = collection(db, 'users');
-      const usersSnapshot = await getDocs(usersCollection);
-      const usersList = usersSnapshot.docs.map(doc => doc.data());
-      console.log(usersList);
-    };
-
-    fetchUsers();
-  }, []);
 
   const categories = [
     {
