@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { type Quiz, type QuizResult } from './types';
 import {
   charactersQuizzesList,
@@ -107,29 +107,55 @@ function App() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <header className="absolute top-0 left-0 right-0 flex justify-end p-4 z-20">
-        <button
-          onClick={handleShowProfile}
-          className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+      <header className="flex p-4 z-20 justify-between max-w-6xl mx-auto w-full overflow-x-hidden items-center">
+        <div>
+          {currentView !== 'categories' && (
+              <button
+                  onClick={handleBackToCategories}
+                  className="group flex items-center gap-2 text-white/80 hover:text-white font-semibold transition-colors duration-200"
+              >
+                <svg
+                    className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                  <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+                Back to Categories
+              </button>
+          )}
+        </div>
+
+        <div>
+          <button
+              onClick={handleShowProfile}
+              className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-            />
-          </svg>
-        </button>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+              <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+          </button>
+        </div>
       </header>
 
-      <div className="relative z-10 py-8 px-4 max-w-full overflow-x-hidden min-h-screen">
+      <div className="relative z-10 pb-8 px-4 max-w-full overflow-x-hidden min-h-screen">
         {currentView === 'categories' && (
           <CategoryList
             onSelectCategory={handleSelectCategory}
@@ -159,7 +185,7 @@ function App() {
             onBackToQuizzes={handleBackToQuizzes}
           />
         )}
-        {currentView === 'profile' && <Profile onBack={handleBackToCategories} />}
+        {currentView === 'profile' && <Profile />}
       </div>
     </div>
   );

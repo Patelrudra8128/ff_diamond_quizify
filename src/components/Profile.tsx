@@ -2,10 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 
-interface ProfileProps {
-  onBack: () => void;
-}
-
 interface User {
   ff_player_data: {
     basicInfo: {
@@ -26,7 +22,7 @@ interface User {
   coins: number;
 }
 
-const Profile: React.FC<ProfileProps> = ({ onBack }) => {
+const Profile: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -55,25 +51,6 @@ const Profile: React.FC<ProfileProps> = ({ onBack }) => {
   return (
     <div className="max-w-6xl mx-auto w-full px-4 min-h-screen">
       <div className="mb-8">
-        <button
-          onClick={onBack}
-          className="group flex items-center gap-2 text-white/80 hover:text-white font-semibold mb-6 transition-colors duration-200"
-        >
-          <svg
-            className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          Back to Categories
-        </button>
         <div className="max-w-4xl mx-auto mt-10 p-6 bg-white/10 rounded-lg shadow-lg text-white">
           <h1 className="text-4xl font-bold mb-6 text-center">Player Profile</h1>
           {user ? (
