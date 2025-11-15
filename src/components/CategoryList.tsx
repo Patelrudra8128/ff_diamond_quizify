@@ -47,38 +47,25 @@ export default function CategoryList({
   ];
 
   return (
-    <div className="max-w-6xl mx-auto animate-fadeIn w-full overflow-x-hidden px-4">
-      <div className="text-center mb-16">
-        <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-6 animate-slideDown">
-          FF Diamond Quizify
-        </h1>
-        <p className="text-2xl text-gray-300 font-light">
-          Choose a category to test your knowledge
-        </p>
-        <div className="mt-8 flex justify-center">
-          <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
-        </div>
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10 overflow-x-hidden">
         {categories.map((category, index) => (
-          <div
-            key={category.id}
-            className="animate-fadeInUp"
-            style={{ animationDelay: `${index * 100}ms` }}
-          >
-            <CategoryCard
-              name={category.name}
-              description={category.description}
-              icon={category.icon}
-              count={category.count}
-              gradientFrom={category.gradientFrom}
-              gradientTo={category.gradientTo}
-              onClick={() => onSelectCategory(category.id)}
-            />
-          </div>
+            <div
+                key={category.id}
+                className="animate-fadeInUp"
+                style={{animationDelay: `${index * 100}ms`}}
+            >
+              <CategoryCard
+                  name={category.name}
+                  description={category.description}
+                  icon={category.icon}
+                  count={category.count}
+                  gradientFrom={category.gradientFrom}
+                  gradientTo={category.gradientTo}
+                  onClick={() => onSelectCategory(category.id)}
+              />
+            </div>
         ))}
       </div>
-    </div>
   );
 }
 

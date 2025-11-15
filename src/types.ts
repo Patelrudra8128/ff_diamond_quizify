@@ -20,3 +20,29 @@ export interface QuizResult {
   totalQuestions: number;
   answers: { questionIndex: number; selectedAnswer: string; isCorrect: boolean }[];
 }
+
+export interface CharacterDetail {
+  name: string;
+  title?: string;
+  description: string;
+  role?: string;
+  ability?: {
+    name: string;
+    type: string;
+    details: {
+      [key: string]: any;
+      effects?: string[];
+      special_effects?: string[];
+    };
+  };
+  strengths?: string[];
+  weaknesses?: string[];
+  best_combinations?: Array<{
+    combo: string[];
+    reason: string;
+  }>;
+  release?: {
+    update: string;
+    type: string;
+  };
+}

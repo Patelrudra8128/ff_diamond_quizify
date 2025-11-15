@@ -10,8 +10,10 @@ import QuizList from './components/QuizList';
 import QuizView from './components/QuizView';
 import QuizResultComponent from './components/QuizResult';
 import Profile from './components/Profile';
+import DetailsList from './components/DetailsList';
+import DetailView from './components/DetailView';
 
-type View = 'categories' | 'quiz-list' | 'quiz' | 'result' | 'profile';
+type View = 'categories' | 'quiz-list' | 'quiz' | 'result' | 'profile' | 'details-list' | 'detail-view';
 
 function App() {
   const [currentView, setCurrentView] = useState<View>('categories');
@@ -20,6 +22,8 @@ function App() {
   );
   const [currentQuiz, setCurrentQuiz] = useState<Quiz | null>(null);
   const [quizResult, setQuizResult] = useState<QuizResult | null>(null);
+  const [selectedDetailCategory, setSelectedDetailCategory] = useState<Category | null>(null);
+  const [currentDetailQuiz, setCurrentDetailQuiz] = useState<Quiz | null>(null);
 
   const getCategoryQuizzes = (category: Category): Quiz[] => {
     switch (category) {
@@ -52,11 +56,18 @@ function App() {
     setCurrentView('quiz-list');
   };
 
+  const handleSelectDetailCategory = (category: Category) => {
+    setSelectedDetailCategory(category);
+    setCurrentView('details-list');
+  };
+
   const handleBackToCategories = () => {
     setCurrentView('categories');
     setSelectedCategory(null);
     setCurrentQuiz(null);
     setQuizResult(null);
+    setSelectedDetailCategory(null);
+    setCurrentDetailQuiz(null);
   };
 
   const handleStartQuiz = (quizIndex: number) => {
@@ -92,6 +103,21 @@ function App() {
     setCurrentView('profile');
   };
 
+  const handleReadMore = (quizIndex: number) => {
+    if (!selectedDetailCategory) return;
+    const categoryQuizzes = getCategoryQuizzes(selectedDetailCategory);
+    const quiz = categoryQuizzes[quizIndex];
+    if (quiz) {
+      setCurrentDetailQuiz(quiz);
+      setCurrentView('detail-view');
+    }
+  };
+
+  const handleBackToDetailsList = () => {
+    setCurrentView('details-list');
+    setCurrentDetailQuiz(null);
+  };
+
   const categoryCounts = {
     characters: charactersQuizzesList.length,
     pets: petsQuizzesList.length,
@@ -111,7 +137,11 @@ function App() {
         <div>
           {currentView !== 'categories' && (
               <button
-                  onClick={handleBackToCategories}
+                  onClick={
+                    currentView === 'detail-view' 
+                      ? handleBackToDetailsList 
+                      : handleBackToCategories
+                  }
                   className="group flex items-center gap-2 text-white/80 hover:text-white font-semibold transition-colors duration-200"
               >
                 <svg
@@ -127,7 +157,7 @@ function App() {
                       d="M15 19l-7-7 7-7"
                   />
                 </svg>
-                Back to Categories
+                {currentView === 'detail-view' ? 'Back to List' : 'Back to Categories'}
               </button>
           )}
         </div>
@@ -157,25 +187,59 @@ function App() {
 
       <div className="relative z-10 pb-8 px-4 max-w-full overflow-x-hidden min-h-screen">
         {currentView === 'categories' && (
-          <CategoryList
-            onSelectCategory={handleSelectCategory}
-            categoryCounts={categoryCounts}
-          />
+            <div className="flex flex-col gap-16">
+              <div className="max-w-6xl mx-auto animate-fadeIn w-full overflow-x-hidden px-4">
+                <div className="text-center mb-4">
+                  <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-6 animate-slideDown">
+                    FF Diamond Quizify
+                  </h1>
+                  <p className="text-2xl text-gray-300 font-light">
+                    Choose a category to test your knowledge
+                  </p>
+                  <div className="mt-8 flex justify-center">
+                    <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                  </div>
+                </div>
+                <CategoryList
+                    onSelectCategory={handleSelectCategory}
+                    categoryCounts={categoryCounts}
+                />
+              </div>
+
+              {/* Details Section */}
+              <div className="max-w-6xl mx-auto animate-fadeIn w-full overflow-x-hidden px-4">
+                <div className="text-center mb-4">
+                  <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mb-6 animate-slideDown">
+                    Details
+                  </h1>
+                  <p className="text-2xl text-gray-300 font-light">
+                    Choose a category to gain knowledge
+                  </p>
+                  <div className="mt-8 flex justify-center">
+                    <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                  </div>
+                </div>
+                <CategoryList
+                    onSelectCategory={handleSelectDetailCategory}
+                    categoryCounts={categoryCounts}
+                />
+              </div>
+            </div>
         )}
         {currentView === 'quiz-list' && selectedCategory && (
-          <QuizList
-            quizzes={getCategoryQuizzes(selectedCategory)}
-            category={selectedCategory}
-            categoryName={getCategoryName(selectedCategory)}
-            onStartQuiz={handleStartQuiz}
-            onBackToCategories={handleBackToCategories}
-          />
+            <QuizList
+                quizzes={getCategoryQuizzes(selectedCategory)}
+                category={selectedCategory}
+                categoryName={getCategoryName(selectedCategory)}
+                onStartQuiz={handleStartQuiz}
+                onBackToCategories={handleBackToCategories}
+            />
         )}
         {currentView === 'quiz' && currentQuiz && (
-          <QuizView
-            quiz={currentQuiz}
-            onComplete={handleQuizComplete}
-            onBack={handleBackToQuizzes}
+            <QuizView
+                quiz={currentQuiz}
+                onComplete={handleQuizComplete}
+                onBack={handleBackToQuizzes}
           />
         )}
         {currentView === 'result' && quizResult && (
@@ -186,6 +250,22 @@ function App() {
           />
         )}
         {currentView === 'profile' && <Profile />}
+        {currentView === 'details-list' && selectedDetailCategory && (
+          <DetailsList
+            quizzes={getCategoryQuizzes(selectedDetailCategory)}
+            category={selectedDetailCategory}
+            categoryName={getCategoryName(selectedDetailCategory)}
+            onReadMore={handleReadMore}
+            onBackToCategories={handleBackToCategories}
+          />
+        )}
+        {currentView === 'detail-view' && currentDetailQuiz && selectedDetailCategory && (
+          <DetailView
+            quiz={currentDetailQuiz}
+            category={selectedDetailCategory}
+            onBack={handleBackToDetailsList}
+          />
+        )}
       </div>
     </div>
   );
