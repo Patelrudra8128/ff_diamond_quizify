@@ -19,6 +19,7 @@ export interface QuizResult {
   score: number;
   totalQuestions: number;
   answers: { questionIndex: number; selectedAnswer: string; isCorrect: boolean }[];
+  coinsEarned?: number;
 }
 
 export interface CharacterDetail {
