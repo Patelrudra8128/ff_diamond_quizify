@@ -111,11 +111,11 @@ export default function QuizView({ quiz, onComplete, onBack }: QuizViewProps) {
           showResult={false}
         />
 
-        <div className="flex justify-between mt-10 gap-4">
+        <div className="flex flex-col-reverse sm:flex-row justify-between mt-10 gap-4">
           <button
             onClick={handlePrevious}
             disabled={currentQuestionIndex === 0}
-            className={`flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 ${
+            className={`flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto ${
               currentQuestionIndex === 0
                 ? 'bg-white/5 text-gray-500 cursor-not-allowed border border-white/10'
                 : 'bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-white/40 transform hover:scale-105 active:scale-95'
@@ -129,7 +129,7 @@ export default function QuizView({ quiz, onComplete, onBack }: QuizViewProps) {
           <button
             onClick={handleNext}
             disabled={!canProceed}
-            className={`flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 ${
+            className={`flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto ${
               canProceed
                 ? 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95'
                 : 'bg-white/5 text-gray-500 cursor-not-allowed border border-white/10'

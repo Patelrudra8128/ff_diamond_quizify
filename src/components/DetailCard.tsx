@@ -18,41 +18,37 @@ export default function DetailCard({ quiz, quizIndex, onReadMore, category }: De
     >
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-      
+
       <div className="relative z-10">
         {quiz.imagePath && quiz.imagePath !== 'placeholder' ? (
-          <img 
-            src={`../src/assets/${category}/${quiz.imagePath}`}
-            alt={quiz.name}
-            className="w-full bg-cover rounded-xl mb-4 shadow-lg"
-            loading="lazy"
-          />
+            <img
+                src={`../src/assets/${category}/${quiz.imagePath}`}
+                alt={quiz.name}
+                className="w-full bg-cover rounded-xl mb-4 shadow-lg"
+                loading="lazy"
+            />
         ) : (
-          <div className="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-4 shadow-lg flex items-center justify-center">
-            <span className="text-6xl font-bold text-white opacity-80">{quiz.name.charAt(0)}</span>
-          </div>
+            <div
+                className="w-full h-48 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-4 shadow-lg flex items-center justify-center">
+              <span className="text-6xl font-bold text-white opacity-80">{quiz.name.charAt(0)}</span>
+            </div>
         )}
-        
+
         <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-pink-300 transition-all duration-300">
           {quiz.name}
         </h3>
         <p className="text-gray-300 mb-6 leading-relaxed line-clamp-3">{quiz.description}</p>
-        
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
-            <span className="text-sm text-gray-300 font-medium">
-              {quiz.questions.length} Questions
-            </span>
-          </div>
-          <div className="relative bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 overflow-hidden group-button">
-            <span className="relative z-10 flex items-center gap-2">
+
+        <div className="relative bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 overflow-hidden group-button">
+            <span className="relative z-10 flex items-center gap-2 justify-center">
               Read More
-              <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none"
+                   stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/>
               </svg>
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </div>
+          <div
+              className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
       </div>
     </Link>

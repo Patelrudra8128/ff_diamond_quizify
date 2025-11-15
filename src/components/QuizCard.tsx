@@ -38,14 +38,14 @@ export default function QuizCard({ quiz, quizIndex, onStart, category }: QuizCar
         </h3>
         <p className="text-gray-300 mb-6 leading-relaxed">{quiz.description}</p>
         
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+          <div className="flex items-center justify-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
             <span className="text-sm text-gray-300 font-medium">
               {quiz.questions.length} Questions
             </span>
           </div>
-          <div className="relative bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 overflow-hidden group-button">
-            <span className="relative z-10 flex items-center gap-2">
+          <div className="relative bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 overflow-hidden group-button w-full sm:w-auto text-center">
+            <span className="relative z-10 flex items-center justify-center gap-2">
               Start Quiz
               <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
