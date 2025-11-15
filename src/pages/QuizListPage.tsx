@@ -1,4 +1,5 @@
 import { useParams, Navigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import QuizList from '../components/QuizList';
 import {
   charactersQuizzesList,
@@ -6,9 +7,30 @@ import {
   weaponsQuizzesList,
 } from '../data/quizzes';
 import { type Category } from '../components/CategoryList';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../firebase';
 
 export default function QuizListPage() {
   const { category } = useParams<{ category: Category }>();
+  const [completedQuizzes, setCompletedQuizzes] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchCompletedQuizzes = async () => {
+      const userId = localStorage.getItem('userId');
+      if (userId) {
+        const userDocRef = doc(db, 'users', userId);
+        const userDoc = await getDoc(userDocRef);
+        if (userDoc.exists()) {
+          const userData = userDoc.data();
+          if (userData && userData.completed_quiz) {
+            setCompletedQuizzes(userData.completed_quiz);
+          }
+        }
+      }
+    };
+
+    fetchCompletedQuizzes();
+  }, []);
 
   const getCategoryQuizzes = (cat: Category) => {
     switch (cat) {
@@ -47,9 +69,9 @@ export default function QuizListPage() {
       quizzes={quizzes}
       category={category}
       categoryName={getCategoryName(category)}
+      completedQuizzes={completedQuizzes}
       onStartQuiz={() => {}}
       onBackToCategories={() => {}}
     />
   );
 }
-

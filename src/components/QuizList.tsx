@@ -6,6 +6,7 @@ interface QuizListProps {
   quizzes: Quiz[];
   category: Category;
   categoryName: string;
+  completedQuizzes: string[];
   onStartQuiz?: (quizIndex: number) => void;
   onBackToCategories?: () => void;
 }
@@ -14,6 +15,7 @@ export default function QuizList({
   quizzes,
   category,
   categoryName,
+  completedQuizzes,
   onStartQuiz,
   onBackToCategories,
 }: QuizListProps) {
@@ -38,7 +40,13 @@ export default function QuizList({
             key={`${category}-${quiz.name}-${index}`}
             className="will-change-transform"
           >
-            <QuizCard quiz={quiz} quizIndex={index} onStart={onStartQuiz} category={category} />
+            <QuizCard
+              quiz={quiz}
+              quizIndex={index}
+              onStart={onStartQuiz}
+              category={category}
+              isCompleted={completedQuizzes.includes(quiz.name)}
+            />
           </div>
         ))}
       </div>

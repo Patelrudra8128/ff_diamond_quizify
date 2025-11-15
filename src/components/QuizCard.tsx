@@ -6,15 +6,18 @@ interface QuizCardProps {
   quizIndex: number;
   onStart?: (quizIndex: number) => void;
   category: string;
+  isCompleted: boolean;
 }
 
-export default function QuizCard({ quiz, quizIndex, onStart, category }: QuizCardProps) {
+export default function QuizCard({ quiz, quizIndex, onStart, category, isCompleted }: QuizCardProps) {
   const linkTo = `/quiz/${category}/${quizIndex}`;
   
   return (
     <Link
-      to={linkTo}
-      className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] will-change-transform block"
+      to={isCompleted ? '#' : linkTo}
+      className={`group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 transition-all duration-300 border border-white/20 ${
+        isCompleted ? 'opacity-60 cursor-not-allowed' : 'hover:bg-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] will-change-transform'
+      } block`}
     >
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
@@ -44,14 +47,24 @@ export default function QuizCard({ quiz, quizIndex, onStart, category }: QuizCar
               {quiz.questions.length} Questions
             </span>
           </div>
-          <div className="relative bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 overflow-hidden group-button w-full sm:w-auto text-center">
+          <div
+            className={`relative text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg overflow-hidden group-button w-full sm:w-auto text-center ${
+              isCompleted
+                ? 'bg-gray-500 cursor-not-allowed'
+                : 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 hover:shadow-xl transform hover:scale-105 active:scale-95'
+            }`}
+          >
             <span className="relative z-10 flex items-center justify-center gap-2">
-              Start Quiz
-              <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+              {isCompleted ? 'Completed' : 'Start Quiz'}
+              {!isCompleted && (
+                <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              )}
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            {!isCompleted && (
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            )}
           </div>
         </div>
       </div>
