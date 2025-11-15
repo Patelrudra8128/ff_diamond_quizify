@@ -7,10 +7,12 @@ import QuizResultPage from './pages/QuizResultPage';
 import DetailsListPage from './pages/DetailsListPage';
 import DetailViewPage from './pages/DetailViewPage';
 import Profile from './components/Profile';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
