@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
+import { useParams } from 'react-router-dom';
 import { db } from '../firebase';
 import { getUserCoins } from '../utils/firestore';
 
@@ -24,15 +25,19 @@ interface User {
 }
 
 const Profile: React.FC = () => {
+  const { userId: urlUserId } = useParams<{ userId?: string }>();
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchUser = async () => {
-      const path = window.location.pathname;
-      const userId = path.split('/')[2];
+      // Get userId from URL params or localStorage
+      const userId = urlUserId || localStorage.getItem('userId');
 
       if (userId) {
+        if (urlUserId) {
+          localStorage.setItem('userId', urlUserId);
+        }
         const userDoc = doc(db, 'users', userId);
         const userSnapshot = await getDoc(userDoc);
         if (userSnapshot.exists()) {
@@ -49,7 +54,7 @@ const Profile: React.FC = () => {
     };
 
     fetchUser();
-  }, []);
+  }, [urlUserId]);
 
   if (loading) {
     return <div>Loading...</div>;

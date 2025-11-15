@@ -5,7 +5,7 @@ import { getDetail } from '../data/details';
 interface DetailViewProps {
   quiz: Quiz;
   category: Category;
-  onBack: () => void;
+  onBack?: () => void;
 }
 
 export default function DetailView({ quiz, category, onBack }: DetailViewProps) {
@@ -16,7 +16,7 @@ export default function DetailView({ quiz, category, onBack }: DetailViewProps) 
         {/* Image */}
         {quiz.imagePath && quiz.imagePath !== 'placeholder' ? (
           <img 
-            src={`src/assets/${category}/${quiz.imagePath}`}
+            src={`../../src/assets/${category}/${quiz.imagePath}`}
             alt={quiz.name}
             className="w-full bg-cover rounded-xl mb-6 shadow-lg"
             loading="lazy"

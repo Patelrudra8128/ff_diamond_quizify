@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { type Category } from './CategoryList';
+
 interface CategoryCardProps {
   name: string;
   description: string;
@@ -5,7 +8,9 @@ interface CategoryCardProps {
   count: number;
   gradientFrom: string;
   gradientTo: string;
-  onClick: () => void;
+  onClick?: () => void;
+  mode?: 'quiz' | 'details';
+  category?: Category;
 }
 
 export default function CategoryCard({
@@ -16,12 +21,17 @@ export default function CategoryCard({
   gradientFrom,
   gradientTo,
   onClick,
+  mode = 'quiz',
+  category,
 }: CategoryCardProps) {
-  return (
-    <div
-      onClick={onClick}
-      className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] cursor-pointer will-change-transform"
-    >
+  const linkTo = category
+    ? mode === 'quiz'
+      ? `/quiz/${category}`
+      : `/details/${category}`
+    : '#';
+
+  const CardContent = (
+    <>
       {/* Gradient overlay on hover */}
       <div
         className={`absolute inset-0 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300`}
@@ -39,6 +49,26 @@ export default function CategoryCard({
           </span>
         </div>
       </div>
+    </>
+  );
+
+  if (category && mode) {
+    return (
+      <Link
+        to={linkTo}
+        className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] cursor-pointer will-change-transform block"
+      >
+        {CardContent}
+      </Link>
+    );
+  }
+
+  return (
+    <div
+      onClick={onClick}
+      className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] cursor-pointer will-change-transform"
+    >
+      {CardContent}
     </div>
   );
 }

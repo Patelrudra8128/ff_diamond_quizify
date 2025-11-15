@@ -6,8 +6,8 @@ interface DetailsListProps {
   quizzes: Quiz[];
   category: Category;
   categoryName: string;
-  onReadMore: (quizIndex: number) => void;
-  onBackToCategories: () => void;
+  onReadMore?: (quizIndex: number) => void;
+  onBackToCategories?: () => void;
 }
 
 export default function DetailsList({

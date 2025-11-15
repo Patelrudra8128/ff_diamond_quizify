@@ -3,17 +3,19 @@ import CategoryCard from './CategoryCard';
 export type Category = 'characters' | 'pets' | 'weapons';
 
 interface CategoryListProps {
-  onSelectCategory: (category: Category) => void;
+  onSelectCategory?: (category: Category) => void;
   categoryCounts: {
     characters: number;
     pets: number;
     weapons: number;
   };
+  mode?: 'quiz' | 'details';
 }
 
 export default function CategoryList({
   onSelectCategory,
   categoryCounts,
+  mode = 'quiz',
 }: CategoryListProps) {
 
   const categories = [
@@ -61,7 +63,9 @@ export default function CategoryList({
                   count={category.count}
                   gradientFrom={category.gradientFrom}
                   gradientTo={category.gradientTo}
-                  onClick={() => onSelectCategory(category.id)}
+                  onClick={() => onSelectCategory?.(category.id)}
+                  mode={mode}
+                  category={category.id}
               />
             </div>
         ))}

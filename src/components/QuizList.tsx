@@ -6,8 +6,8 @@ interface QuizListProps {
   quizzes: Quiz[];
   category: Category;
   categoryName: string;
-  onStartQuiz: (quizIndex: number) => void;
-  onBackToCategories: () => void;
+  onStartQuiz?: (quizIndex: number) => void;
+  onBackToCategories?: () => void;
 }
 
 export default function QuizList({

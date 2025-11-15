@@ -1,22 +1,28 @@
+import { Link } from 'react-router-dom';
 import { type Quiz } from '../types';
 
 interface QuizCardProps {
   quiz: Quiz;
   quizIndex: number;
-  onStart: (quizIndex: number) => void;
+  onStart?: (quizIndex: number) => void;
   category: string;
 }
 
 export default function QuizCard({ quiz, quizIndex, onStart, category }: QuizCardProps) {
+  const linkTo = `/quiz/${category}/${quizIndex}`;
+  
   return (
-    <div className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] will-change-transform">
+    <Link
+      to={linkTo}
+      className="group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] will-change-transform block"
+    >
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
       
       <div className="relative z-10">
         {quiz.imagePath && quiz.imagePath !== 'placeholder' ? (
           <img 
-            src={`src/assets/${category}/${quiz.imagePath}`}
+            src={`../src/assets/${category}/${quiz.imagePath}`}
             alt={quiz.name}
             className="w-full bg-cover rounded-xl mb-4 shadow-lg"
             loading="lazy"
@@ -38,10 +44,7 @@ export default function QuizCard({ quiz, quizIndex, onStart, category }: QuizCar
               {quiz.questions.length} Questions
             </span>
           </div>
-          <button
-            onClick={() => onStart(quizIndex)}
-            className="relative bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 overflow-hidden group"
-          >
+          <div className="relative bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 overflow-hidden group-button">
             <span className="relative z-10 flex items-center gap-2">
               Start Quiz
               <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,9 +52,9 @@ export default function QuizCard({ quiz, quizIndex, onStart, category }: QuizCar
               </svg>
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
