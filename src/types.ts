@@ -25,7 +25,9 @@ export interface CharacterDetail {
   name: string;
   title?: string;
   description: string;
-  role?: string;
+  role?: string; // For characters
+  type?: string; // For pets and weapons
+  weapon_type?: string; // For weapons only
   ability?: {
     name: string;
     type: string;
@@ -35,6 +37,26 @@ export interface CharacterDetail {
       special_effects?: string[];
     };
   };
+  skill?: {
+    name: string;
+    type: string;
+    details: {
+      [key: string]: any;
+      effects?: string[];
+      special_effects?: string[];
+    };
+  };
+  // Weapon-specific fields
+  damage?: number;
+  healing_per_second?: number;
+  fire_rate?: number;
+  range?: string;
+  magazine_size?: number | string;
+  reload_time?: number;
+  special_features?: string[];
+  best_for?: string[]; // For weapons (similar to strengths)
+  tips?: string[]; // For weapons
+  // Common fields
   strengths?: string[];
   weaknesses?: string[];
   best_combinations?: Array<{
