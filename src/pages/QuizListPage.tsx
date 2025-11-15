@@ -13,10 +13,13 @@ import { db } from '../firebase';
 export default function QuizListPage() {
   const { category } = useParams<{ category: Category }>();
   const [completedQuizzes, setCompletedQuizzes] = useState<string[]>([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
+    const userId = localStorage.getItem('userId');
+    setIsLoggedIn(!!userId);
+
     const fetchCompletedQuizzes = async () => {
-      const userId = localStorage.getItem('userId');
       if (userId) {
         const userDocRef = doc(db, 'users', userId);
         const userDoc = await getDoc(userDocRef);
@@ -70,6 +73,7 @@ export default function QuizListPage() {
       category={category}
       categoryName={getCategoryName(category)}
       completedQuizzes={completedQuizzes}
+      isLoggedIn={isLoggedIn}
       onStartQuiz={() => {}}
       onBackToCategories={() => {}}
     />

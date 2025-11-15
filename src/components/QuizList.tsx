@@ -7,6 +7,7 @@ interface QuizListProps {
   category: Category;
   categoryName: string;
   completedQuizzes: string[];
+  isLoggedIn: boolean;
   onStartQuiz?: (quizIndex: number) => void;
   onBackToCategories?: () => void;
 }
@@ -16,6 +17,7 @@ export default function QuizList({
   category,
   categoryName,
   completedQuizzes,
+  isLoggedIn,
   onStartQuiz,
   onBackToCategories,
 }: QuizListProps) {
@@ -46,6 +48,7 @@ export default function QuizList({
               onStart={onStartQuiz}
               category={category}
               isCompleted={completedQuizzes.includes(quiz.name)}
+              isLoggedIn={isLoggedIn}
             />
           </div>
         ))}
