@@ -1,4 +1,4 @@
-import { doc, getDoc, updateDoc, increment } from 'firebase/firestore';
+import { doc, getDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
 
 /**
@@ -49,6 +49,31 @@ export async function updateUserCoins(userId: string, coinsToAdd: number): Promi
 }
 
 /**
+ * Update completed quizzes in Firestore for a user
+ */
+export async function updateCompletedQuizzes(userId: string, quizName: string): Promise<boolean> {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (!userDoc.exists()) {
+      console.error('User document does not exist');
+      return false;
+    }
+    
+    // Use arrayUnion to add the quiz name to the completed_quiz array
+    await updateDoc(userDocRef, {
+      completed_quiz: arrayUnion(quizName)
+    });
+    
+    return true;
+  } catch (error) {
+    console.error('Error updating completed quizzes:', error);
+    return false;
+  }
+}
+
+/**
  * Get current user coins from Firestore
  */
 export async function getUserCoins(userId: string): Promise<number | null> {
@@ -91,4 +116,3 @@ export async function setUserCoins(userId: string, coins: number): Promise<boole
     return false;
   }
 }
-

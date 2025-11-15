@@ -8,7 +8,7 @@ import {
   weaponsQuizzesList,
 } from '../data/quizzes';
 import { type Category } from '../components/CategoryList';
-import { calculateCoinsEarned, updateUserCoins } from '../utils/firestore';
+import { calculateCoinsEarned, updateUserCoins, updateCompletedQuizzes } from '../utils/firestore';
 
 export default function QuizViewPage() {
   const { category, quizIndex } = useParams<{ category: Category; quizIndex: string }>();
@@ -47,17 +47,16 @@ export default function QuizViewPage() {
     // Get userId from localStorage
     const userId = localStorage.getItem('userId');
     
-    // Update coins in Firestore if userId is available
+    // Update coins and completed quizzes in Firestore if userId is available
     if (userId) {
       try {
-        const success = await updateUserCoins(userId, coinsEarned);
-        if (success) {
-          console.log(`Coins updated successfully: +${coinsEarned}`);
-        } else {
-          console.error('Failed to update coins in Firestore');
-        }
+        await Promise.all([
+          updateUserCoins(userId, coinsEarned),
+          updateCompletedQuizzes(userId, quiz.name)
+        ]);
+        console.log(`Coins and completed quizzes updated successfully: +${coinsEarned}, ${quiz.name}`);
       } catch (error) {
-        console.error('Error updating coins:', error);
+        console.error('Error updating user data:', error);
       }
     }
     
@@ -84,4 +83,3 @@ export default function QuizViewPage() {
     />
   );
 }
-
