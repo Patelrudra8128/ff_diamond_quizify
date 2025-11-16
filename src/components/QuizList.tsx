@@ -9,6 +9,8 @@ interface QuizListProps {
   completedQuizzes: string[];
   isLoggedIn: boolean;
   onStartQuiz?: (quizIndex: number) => void;
+  onResetQuiz: (quizName: string) => void;
+  userId: string | null;
 }
 
 export default function QuizList({
@@ -18,6 +20,8 @@ export default function QuizList({
   completedQuizzes,
   isLoggedIn,
   onStartQuiz,
+  onResetQuiz,
+  userId,
 }: QuizListProps) {
   return (
     <div className="max-w-6xl mx-auto w-full px-4 min-h-screen">
@@ -47,6 +51,8 @@ export default function QuizList({
               category={category}
               isCompleted={completedQuizzes.includes(quiz.name)}
               isLoggedIn={isLoggedIn}
+              onResetQuiz={onResetQuiz}
+              userId={userId}
             />
           </div>
         ))}

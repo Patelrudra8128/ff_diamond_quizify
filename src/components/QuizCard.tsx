@@ -10,9 +10,11 @@ interface QuizCardProps {
   category: string;
   isCompleted: boolean;
   isLoggedIn: boolean;
+  onResetQuiz: (quizName: string) => void;
+  userId: string | null;
 }
 
-export default function QuizCard({ quiz, quizIndex, onStart, category, isCompleted, isLoggedIn }: QuizCardProps) {
+export default function QuizCard({ quiz, quizIndex, onStart, category, isCompleted, isLoggedIn, onResetQuiz, userId }: QuizCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const linkTo = `/quiz/${category}/${quizIndex}`;
 
@@ -24,12 +26,20 @@ export default function QuizCard({ quiz, quizIndex, onStart, category, isComplet
       onStart(quizIndex);
     }
   };
+
+  const handleAdWatch = () => {
+    // Here you would typically show an ad.
+    // For now, we'll just simulate it and unlock the quiz.
+    if (userId) {
+      onResetQuiz(quiz.name);
+    }
+  };
   
   return (
     <>
       <div
         className={`group relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-6 transition-all duration-300 border border-white/20 ${
-          isCompleted ? 'opacity-60' : 'hover:bg-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] will-change-transform'
+          isCompleted ? 'opacity-80' : 'hover:bg-white/20 hover:border-white/40 transform hover:-translate-y-2 hover:scale-[1.02] will-change-transform'
         } block`}
       >
         {/* Gradient overlay on hover */}
@@ -60,27 +70,30 @@ export default function QuizCard({ quiz, quizIndex, onStart, category, isComplet
                 {quiz.questions.length} Questions
               </span>
             </div>
-            <Link
-              to={isCompleted ? '#' : linkTo}
-              onClick={handleStartClick}
-              className={`relative text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg overflow-hidden group-button w-full sm:w-auto text-center ${
-                isCompleted
-                  ? 'bg-gray-500 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 hover:shadow-xl transform hover:scale-105 active:scale-95'
-              }`}
-            >
-              <span className="relative z-10 flex items-center justify-center gap-2">
-                {isCompleted ? 'Completed' : 'Start Quiz'}
-                {!isCompleted && (
+            {isCompleted ? (
+              <button
+                onClick={handleAdWatch}
+                className="relative text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg overflow-hidden group-button w-full sm:w-auto text-center bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-400 hover:to-cyan-400 hover:shadow-xl transform hover:scale-105 active:scale-95"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  Watch Ad to Unlock
+                </span>
+              </button>
+            ) : (
+              <Link
+                to={linkTo}
+                onClick={handleStartClick}
+                className="relative text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-lg overflow-hidden group-button w-full sm:w-auto text-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 hover:shadow-xl transform hover:scale-105 active:scale-95"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  Start Quiz
                   <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-                )}
-              </span>
-              {!isCompleted && (
+                </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              )}
-            </Link>
+              </Link>
+            )}
           </div>
         </div>
       </div>

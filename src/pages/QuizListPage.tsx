@@ -9,19 +9,24 @@ import {
 import { type Category } from '../components/CategoryList';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { resetCompletedQuiz } from '../utils/firestore';
 
 export default function QuizListPage() {
   const { category } = useParams<{ category: Category }>();
   const [completedQuizzes, setCompletedQuizzes] = useState<string[]>([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
-    const userId = localStorage.getItem('userId');
-    setIsLoggedIn(!!userId);
+    const storedUserId = localStorage.getItem('userId');
+    if (storedUserId) {
+      setUserId(storedUserId);
+      setIsLoggedIn(true);
+    }
 
     const fetchCompletedQuizzes = async () => {
-      if (userId) {
-        const userDocRef = doc(db, 'users', userId);
+      if (storedUserId) {
+        const userDocRef = doc(db, 'users', storedUserId);
         const userDoc = await getDoc(userDocRef);
         if (userDoc.exists()) {
           const userData = userDoc.data();
@@ -34,6 +39,15 @@ export default function QuizListPage() {
 
     fetchCompletedQuizzes();
   }, []);
+
+  const handleResetQuiz = async (quizName: string) => {
+    if (userId) {
+      const success = await resetCompletedQuiz(userId, quizName);
+      if (success) {
+        setCompletedQuizzes(prev => prev.filter(q => q !== quizName));
+      }
+    }
+  };
 
   const getCategoryQuizzes = (cat: Category) => {
     switch (cat) {
@@ -75,6 +89,8 @@ export default function QuizListPage() {
       completedQuizzes={completedQuizzes}
       isLoggedIn={isLoggedIn}
       onStartQuiz={() => {}}
+      onResetQuiz={handleResetQuiz}
+      userId={userId}
     />
   );
 }

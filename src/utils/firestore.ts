@@ -1,4 +1,4 @@
-import { doc, getDoc, updateDoc, increment, arrayUnion } from 'firebase/firestore';
+import { doc, getDoc, updateDoc, increment, arrayUnion, arrayRemove } from 'firebase/firestore';
 import { db } from '../firebase';
 
 /**
@@ -113,6 +113,31 @@ export async function setUserCoins(userId: string, coins: number): Promise<boole
     return true;
   } catch (error) {
     console.error('Error setting user coins:', error);
+    return false;
+  }
+}
+
+/**
+ * Reset a completed quiz for a user
+ */
+export async function resetCompletedQuiz(userId: string, quizName: string): Promise<boolean> {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (!userDoc.exists()) {
+      console.error('User document does not exist');
+      return false;
+    }
+    
+    // Use arrayRemove to remove the quiz name from the completed_quiz array
+    await updateDoc(userDocRef, {
+      completed_quiz: arrayRemove(quizName)
+    });
+    
+    return true;
+  } catch (error) {
+    console.error('Error resetting completed quiz:', error);
     return false;
   }
 }
