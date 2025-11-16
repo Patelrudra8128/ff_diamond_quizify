@@ -38,7 +38,7 @@ export default function QuizCard({ quiz, quizIndex, onStart, category, isComplet
         <div className="relative z-10">
           {quiz.imagePath && quiz.imagePath !== 'placeholder' ? (
             <img 
-              src={`../src/assets/${category}/${quiz.imagePath}`}
+              src={`/assets/${category}/${quiz.imagePath}`}
               alt={quiz.name}
               className="w-full bg-cover rounded-xl mb-4 shadow-lg"
               loading="lazy"
