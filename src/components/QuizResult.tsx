@@ -2,11 +2,9 @@ import { type QuizResult as QuizResultType } from '../types';
 
 interface QuizResultProps {
   result: QuizResultType;
-  onRestart: () => void;
-  onBackToQuizzes: () => void;
 }
 
-export default function QuizResult({ result, onRestart, onBackToQuizzes }: QuizResultProps) {
+export default function QuizResult({ result }: QuizResultProps) {
   const percentage = Math.round((result.score / result.totalQuestions) * 100);
   
   let resultColor = 'from-red-400 to-rose-500';
@@ -64,27 +62,6 @@ export default function QuizResult({ result, onRestart, onBackToQuizzes }: QuizR
               </div>
             )}
           </div>
-        </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            onClick={onRestart}
-            className="group flex-1 sm:flex-initial flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95"
-          >
-            <svg className="w-5 h-5 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
-            Try Again
-          </button>
-          <button
-            onClick={onBackToQuizzes}
-            className="group flex-1 sm:flex-initial flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:scale-105 active:scale-95"
-          >
-            <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Quizzes
-          </button>
         </div>
       </div>
       
