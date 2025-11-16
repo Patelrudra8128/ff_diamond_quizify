@@ -20,6 +20,8 @@ export default function QuizCard({ quiz, quizIndex, onStart, category, isComplet
     if (!isLoggedIn) {
       e.preventDefault();
       setIsModalOpen(true);
+    } else if (onStart) {
+      onStart(quizIndex);
     }
   };
   

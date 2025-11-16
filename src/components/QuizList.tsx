@@ -9,7 +9,6 @@ interface QuizListProps {
   completedQuizzes: string[];
   isLoggedIn: boolean;
   onStartQuiz?: (quizIndex: number) => void;
-  onBackToCategories?: () => void;
 }
 
 export default function QuizList({
@@ -19,7 +18,6 @@ export default function QuizList({
   completedQuizzes,
   isLoggedIn,
   onStartQuiz,
-  onBackToCategories,
 }: QuizListProps) {
   return (
     <div className="max-w-6xl mx-auto w-full px-4 min-h-screen">

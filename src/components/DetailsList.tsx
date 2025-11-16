@@ -6,16 +6,12 @@ interface DetailsListProps {
   quizzes: Quiz[];
   category: Category;
   categoryName: string;
-  onReadMore?: (quizIndex: number) => void;
-  onBackToCategories?: () => void;
 }
 
 export default function DetailsList({
   quizzes,
   category,
-  categoryName,
-  onReadMore,
-  onBackToCategories,
+  categoryName
 }: DetailsListProps) {
   return (
     <div className="max-w-6xl mx-auto w-full px-4 min-h-screen">
@@ -38,7 +34,7 @@ export default function DetailsList({
             key={`${category}-${quiz.name}-${index}`}
             className="will-change-transform"
           >
-            <DetailCard quiz={quiz} quizIndex={index} onReadMore={onReadMore} category={category} />
+            <DetailCard quiz={quiz} quizIndex={index} category={category} />
           </div>
         ))}
       </div>

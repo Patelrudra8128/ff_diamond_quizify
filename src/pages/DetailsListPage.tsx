@@ -47,8 +47,6 @@ export default function DetailsListPage() {
       quizzes={quizzes}
       category={category}
       categoryName={getCategoryName(category)}
-      onReadMore={() => {}}
-      onBackToCategories={() => {}}
     />
   );
 }

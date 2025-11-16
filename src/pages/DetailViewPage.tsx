@@ -1,4 +1,4 @@
-import { useParams, Navigate, useNavigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import DetailView from '../components/DetailView';
 import { type Category } from '../components/CategoryList';
 import {
@@ -9,7 +9,6 @@ import {
 
 export default function DetailViewPage() {
   const { category, quizIndex } = useParams<{ category: Category; quizIndex: string }>();
-  const navigate = useNavigate();
 
   const getCategoryQuizzes = (cat: Category) => {
     switch (cat) {
@@ -36,16 +35,10 @@ export default function DetailViewPage() {
     return <Navigate to={`/details/${category}`} replace />;
   }
 
-  const handleBack = () => {
-    navigate(`/details/${category}`);
-  };
-
   return (
     <DetailView
       quiz={quiz}
       category={category}
-      onBack={handleBack}
     />
   );
 }
-

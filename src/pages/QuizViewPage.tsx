@@ -1,5 +1,4 @@
-import { useParams, Navigate, useNavigate, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import QuizView from '../components/QuizView';
 import { type Quiz, type QuizResult } from '../types';
 import {
@@ -13,7 +12,6 @@ import { calculateCoinsEarned, updateUserCoins, updateCompletedQuizzes } from '.
 export default function QuizViewPage() {
   const { category, quizIndex } = useParams<{ category: Category; quizIndex: string }>();
   const navigate = useNavigate();
-  const location = useLocation();
 
   const getCategoryQuizzes = (cat: Category): Quiz[] => {
     switch (cat) {

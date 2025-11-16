@@ -5,10 +5,9 @@ import { getDetail } from '../data/details';
 interface DetailViewProps {
   quiz: Quiz;
   category: Category;
-  onBack?: () => void;
 }
 
-export default function DetailView({ quiz, category, onBack }: DetailViewProps) {
+export default function DetailView({ quiz, category }: DetailViewProps) {
   const detail = getDetail(quiz.name);
   return (
     <div className="max-w-4xl mx-auto w-full px-4 min-h-screen py-8">

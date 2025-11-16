@@ -75,7 +75,6 @@ export default function QuizListPage() {
       completedQuizzes={completedQuizzes}
       isLoggedIn={isLoggedIn}
       onStartQuiz={() => {}}
-      onBackToCategories={() => {}}
     />
   );
 }

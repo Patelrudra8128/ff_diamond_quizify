@@ -1,6 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CategoryList, { type Category } from '../components/CategoryList';
+import CategoryList from '../components/CategoryList';
 import {
   charactersQuizzesList,
   petsQuizzesList,
@@ -29,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <CategoryList
-          onSelectCategory={(category) => {
+          onSelectCategory={() => {
             // This will be handled by Link in CategoryCard
           }}
           categoryCounts={categoryCounts}
@@ -51,7 +49,7 @@ export default function Home() {
           </div>
         </div>
         <CategoryList
-          onSelectCategory={(category) => {
+          onSelectCategory={() => {
             // This will be handled by Link in CategoryCard
           }}
           categoryCounts={categoryCounts}
@@ -61,4 +59,3 @@ export default function Home() {
     </div>
   );
 }
-

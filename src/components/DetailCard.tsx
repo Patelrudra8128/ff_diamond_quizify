@@ -4,11 +4,10 @@ import { type Quiz } from '../types';
 interface DetailCardProps {
   quiz: Quiz;
   quizIndex: number;
-  onReadMore?: (quizIndex: number) => void;
   category: string;
 }
 
-export default function DetailCard({ quiz, quizIndex, onReadMore, category }: DetailCardProps) {
+export default function DetailCard({ quiz, quizIndex, category }: DetailCardProps) {
   const linkTo = `/details/${category}/${quizIndex}`;
   
   return (
