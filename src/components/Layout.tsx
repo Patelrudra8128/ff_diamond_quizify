@@ -35,17 +35,23 @@ export default function Layout({ children }: LayoutProps) {
   const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
-    // Get userId from URL or localStorage
+    const updateUser = async (id: string) => {
+      const userCoins = await getUserCoins(id);
+      if (userCoins !== null) {
+        setUserId(id);
+        localStorage.setItem('userId', id);
+      }
+    };
+
     const path = window.location.pathname;
     const pathUserId = path.split('/')[2];
     
     if (pathUserId && path.includes('/profile/')) {
-      setUserId(pathUserId);
-      localStorage.setItem('userId', pathUserId);
+      updateUser(pathUserId);
     } else {
       const storedUserId = localStorage.getItem('userId');
       if (storedUserId) {
-        setUserId(storedUserId);
+        updateUser(storedUserId);
       }
     }
   }, [location]);
@@ -144,4 +150,3 @@ export default function Layout({ children }: LayoutProps) {
     </div>
   );
 }
-

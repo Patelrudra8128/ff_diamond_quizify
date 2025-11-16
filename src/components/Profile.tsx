@@ -35,13 +35,11 @@ const Profile: React.FC = () => {
       const userId = urlUserId || localStorage.getItem('userId');
 
       if (userId) {
-        if (urlUserId) {
-          localStorage.setItem('userId', urlUserId);
-        }
         const userDoc = doc(db, 'users', userId);
         const userSnapshot = await getDoc(userDoc);
         if (userSnapshot.exists()) {
           const userData = userSnapshot.data() as User;
+          localStorage.setItem('userId', userId);
           // Ensure coins field exists, if not fetch it separately
           if (userData.coins === undefined) {
             const coins = await getUserCoins(userId);
